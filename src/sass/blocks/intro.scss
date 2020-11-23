@@ -1,0 +1,163 @@
+.intro {
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        width: 25%;
+        height: 100%;
+
+        background-color: $blue;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        @media(max-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
+}
+
+.intro__inner {
+    width: 100%;
+    display: flex;
+}
+
+.intro__col {
+    width: 60%;
+    padding-bottom: 245px;
+
+    @media(max-width: $breakpoint-lg) {
+        width: 50%;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        padding-bottom: 150px;
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+.intro__hello {
+    margin-top: 275px;
+    padding: 1rem 2rem;
+    display: inline-block;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+
+    background-color: $blue;
+    border-radius: 1rem;
+
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        width: 30px;
+        height: 30px;
+
+        background-color: transparent;
+
+        border: 20px solid transparent; border-top: 20px solid $blue;
+        border-right: 20px solid $blue;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        transform: translateY(25px);
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        margin-top: 200px;
+    }
+}
+
+.intro__title {
+    margin-top: 50px;
+
+    color: $black;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+
+    @media(max-width: $breakpoint-lg) {
+        margin-top: 40px;
+
+        font-size: 5rem;
+    }
+
+    @media(max-width: $breakpoint-md) {
+        font-size: 4rem;
+    }
+}
+
+.intro__subtitle {
+    margin-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    color: $red;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+
+    @media(max-width: $breakpoint-lg) {
+        margin-top: 10px;
+    }
+}
+
+.intro__pic {
+    width: 40%;
+
+    position: relative;
+
+    @media(max-width: $breakpoint-lg) {
+        width: 50%;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        width: 0;
+    }
+}
+
+.intro__img {
+    display: block;
+    max-width: 75%;
+    height: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 10;
+
+    @media(max-width: $breakpoint-lg) {
+        max-width: 65%;
+    }
+
+    @media(max-width: $breakpoint-md) {
+        max-width: 85%;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

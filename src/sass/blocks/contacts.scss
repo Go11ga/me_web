@@ -1,0 +1,38 @@
+.contacts {
+    padding: 120px 0;
+
+    background-color: $red;
+
+    @media(max-width: $breakpoint-sm) {
+        padding: 90px 0;
+    }
+}
+
+.contacts__inner {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width: $breakpoint-md) {
+        justify-content: center;
+    }
+}
+
+.contacts__item {
+    width: 30%;
+
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+
+    @media(max-width: $breakpoint-md) {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

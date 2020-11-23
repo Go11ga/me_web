@@ -1,0 +1,31 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    @media(max-width: $breakpoint-lg) {
+        background-color: $white;
+        z-index: 100;
+    }
+}
+
+.header--fixed {
+    background-color: $white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.header__inner {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}

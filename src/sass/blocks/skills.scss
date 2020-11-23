@@ -1,0 +1,46 @@
+.skills {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills__item {
+    width: 16%;
+    margin: 0 auto 30px;
+
+    @media(max-width: $breakpoint-md) {
+        width: 22%;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        width: 35%;
+    }
+}
+
+.skills__img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.skills__img--sass {
+    max-width: 50%;
+}
+
+.skills__img--react {
+    max-width: 60%;
+}
+
+.skills__img--vue {
+    margin-top: 10px;
+}
+
+.skills__img--gulp {
+    max-width: 20%;
+}
+
+.skills__img--git {
+    margin-top: 25px;
+}

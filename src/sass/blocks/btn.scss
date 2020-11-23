@@ -1,0 +1,38 @@
+.btn__container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    background-color: $red;
+    border-radius: 25px;
+    border: 1px solid $red;
+    cursor: pointer;
+    outline: 0;
+
+    transition: all .2s linear;
+
+    &:hover {
+        color: $red;
+        background-color: $white;
+    }
+}
+
+.btn--white {
+    color: $black;
+
+    background-color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+        color: $white;
+        background-color: $red;
+    }
+}

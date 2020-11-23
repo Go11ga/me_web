@@ -1,0 +1,70 @@
+.title {
+    font-size: 4.8rem;
+    color: $black;
+    font-weight: 700;
+
+    text-transform: capitalize;
+
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+
+        background-color: $red;
+        border-radius: 50%;
+
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:before {
+        display: block;
+        content: '';
+        width: 25%;
+        height: 3px;
+
+        background-color: $red;
+
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        z-index: 1;
+    }
+
+    @media(max-width: $breakpoint-lg) {
+        font-size: 4rem;
+    }
+}
+
+.title--contacts {
+    color: $white;
+    text-align: center;
+
+    &:after {
+        background-color: $white;
+        left: 50%;
+
+        transform: translate(-50%, 0);
+    }
+
+    &:before {
+        background-color: $white;
+        left: 50%;
+
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+
+
+
+
+
+

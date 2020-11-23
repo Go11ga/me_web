@@ -1,0 +1,32 @@
+.arrow {
+    display: none;
+    padding: 7px 2px 5px;
+
+    border: 1px solid $blue;
+    background-color: $blue;
+    cursor: pointer;
+    outline: 0;
+
+    transition: all .2s linear;
+
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 500;
+
+    &:hover {
+        border: 1px solid darken($blue, 20%);
+        background-color: darken($blue, 20%);
+    }
+}
+
+.arrow--active {
+    display: block;
+}
+
+.arrow__img {
+    width: 40px;
+    height: 40px;
+
+    fill: $white;
+}

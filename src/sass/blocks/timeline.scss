@@ -1,0 +1,170 @@
+.timeline {
+    margin: 4.2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 768px;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+
+        background-color: $black;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+
+        @media(max-width: $breakpoint-md) {
+            display: none;
+        }
+    }
+
+    @media(max-width: $breakpoint-md) {
+        margin: 30px auto;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    @media(max-width: $breakpoint-md) {
+        width: 100%;
+    }
+}
+
+.timeline__col--left {
+    padding-right: 48px;
+
+    text-align: right;
+
+    @media(max-width: $breakpoint-md) {
+        padding-right: 0;
+
+        text-align: center;
+    }
+}
+
+.timeline__col--right {
+    padding-left: 48px;
+
+    @media(max-width: $breakpoint-md) {
+        padding-left: 0;
+
+        text-align: center;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 40px;
+
+    font-size: 1.8rem;
+    color: $black;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    @media(max-width: $breakpoint-md) {
+        margin-bottom: 30px;
+        margin-top: 15px;
+
+        text-align: center;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        margin-bottom: 20px;
+    }
+}
+
+.timeline__title--mt {
+    margin-top: 50px;
+}
+
+.timeline__title--skills {
+    @media(max-width: $breakpoint-sm) {
+        margin-top: 50px;
+    }
+}
+
+.timeline__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 1.4rem;
+    color: $black;
+
+    text-decoration: underline;
+}
+
+.timeline__subtitle {
+    margin-bottom: 3px;
+
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 700;
+}
+
+.timeline__position {
+    font-size: 1.4rem;
+    color: $black;
+}
+
+.timeline__text {
+    margin-top: 12px;
+
+    font-size: 12px;
+    line-height: 1.5;
+    color: $grey;
+    font-weight: 300;
+
+    @media(max-width: $breakpoint-md) {
+        padding: 0 60px;
+    }
+
+    @media(max-width: $breakpoint-sm) {
+        padding: 0;
+    }
+}
+
+.timeline__skills {
+    margin-top: -20px;
+
+    font-size: 1.4rem;
+    color: $black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

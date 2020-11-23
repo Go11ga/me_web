@@ -1,0 +1,28 @@
+.footer {
+    padding: 20px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    @media(max-width: $breakpoint-sm) {
+        width: 100%;
+        text-align: center;
+
+        &:last-child {
+            margin-top: 20px;
+        }
+    }
+}
+
+.footer__text {
+    font-size: 1.5rem;
+    color: $grey;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}

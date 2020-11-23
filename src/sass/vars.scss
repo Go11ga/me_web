@@ -1,0 +1,22 @@
+/*
+$white: #ffffff;
+$black: #222222;
+$blue: #90acd1;
+$light-blue: #f9f9ff;
+$red: #e45447;
+$grey: #777777;
+*/
+
+/* Colors */
+$white: #ffffff;
+$black: #111111;
+$blue: #65a2f0;
+$light-blue: lighten($blue, 32%);
+$red: #d32f21;
+$grey: #777777;
+
+/* Breakpoints */
+$breakpoint-sm: 575px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 991px;
+$breakpoint-xl: 1229px;
